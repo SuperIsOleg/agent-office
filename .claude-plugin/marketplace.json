@@ -1,0 +1,14 @@
+{
+  "name": "agent-office",
+  "description": "Agent Office: watch your Claude Code agents work in a pixel-art office.",
+  "owner": {
+    "name": "Oleg Kalistratov"
+  },
+  "plugins": [
+    {
+      "name": "agent-office",
+      "source": "./",
+      "description": "A pixel-art office in your browser where every agent of your Claude Code session works, walks and asks questions."
+    }
+  ]
+}

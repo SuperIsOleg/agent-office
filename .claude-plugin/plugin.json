@@ -1,0 +1,10 @@
+{
+  "name": "agent-office",
+  "version": "0.1.2",
+  "description": "An animated isometric pixel-art office where every Claude Code agent of the session is a little pixel person: typing at its desk, thinking, raising a hand for a decision, drinking coffee while it waits, jumping and going home when done; with name tags, a cost HUD and an event log. It is a local web page that opens in the system browser; the «Офис» pane holds a short summary and the link.",
+  "author": {
+    "name": "Oleg Kalistratov"
+  },
+  "types": "./types/index.d.ts",
+  "license": "Apache-2.0"
+}

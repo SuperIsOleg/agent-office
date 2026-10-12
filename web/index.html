@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Офис</title>
+<script>
+  ;(() => {
+    const token = new URLSearchParams(location.search).get('token') || ''
+    const suffix = token ? `?token=${encodeURIComponent(token)}` : ''
+    const style = document.createElement('link')
+    style.rel = 'stylesheet'
+    style.href = `office.css${suffix}`
+    document.head.append(style)
+    addEventListener('DOMContentLoaded', () => {
+      const script = document.createElement('script')
+      script.src = `office.js${suffix}`
+      document.body.append(script)
+    })
+  })()
+</script>
+</head>
+<body>
+<main>
+  <div class="room"><button type="button" class="session-label" hidden><b class="main"></b><span class="sub"></span></button><canvas aria-label="The office: every agent of the session at work"></canvas><aside class="card" aria-label="Agent Details" aria-hidden="true"></aside></div>
+  <section class="hud">
+    <div class="bar-row"></div>
+    <ul class="log"></ul>
+    <p class="status">connecting…</p>
+  </section>
+</main>
+</body>
+</html>
